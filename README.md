@@ -1,5 +1,7 @@
 # High Test Coverage
 
+_Classes and Interfaces to help you get higher test coverage_
+
 [![builds.sr.ht status](https://builds.sr.ht/~ancarda/high-test-coverage.svg)](https://builds.sr.ht/~ancarda/high-test-coverage)
 
 High Test Coverage is a collection of classes and interfaces designed to help
