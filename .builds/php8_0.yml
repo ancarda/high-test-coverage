@@ -2,7 +2,7 @@
 image: debian/sid
 
 sources:
-  - https://git.sr.ht/~ancarda/psr7-string-stream
+  - https://git.sr.ht/~ancarda/high-test-coverage
 
 packages:
   - php8.0-cli
@@ -22,7 +22,7 @@ packages:
   - unzip
 
 environment:
-  DIR: psr7-string-stream
+  DIR: high-test-coverage
   XDEBUG_MODE: coverage
 
 tasks:

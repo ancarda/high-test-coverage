@@ -1,8 +1,11 @@
 ---
 image: debian/buster
 
+secrets:
+ - 1e8d3317-4624-41c5-951e-62b536902cfa
+
 sources:
-  - https://git.sr.ht/~ancarda/psr7-string-stream
+  - https://git.sr.ht/~ancarda/high-test-coverage
 
 packages:
   - php7.3-cli
@@ -18,7 +21,7 @@ packages:
   - unzip
 
 environment:
-  DIR: psr7-string-stream
+  DIR: high-test-coverage
   XDEBUG_MODE: coverage
 
 tasks:
@@ -28,3 +31,4 @@ tasks:
   - test:        cd $DIR && composer run-script test
   - check-cov:   cd $DIR && composer run-script check-coverage
   - check-tests: cd $DIR && composer run-script check-tests
+  - packagist:   cd $DIR && .builds/poke-packagist ancarda high-test-coverage ~/.packagist
