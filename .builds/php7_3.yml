@@ -2,7 +2,7 @@
 image: debian/buster
 
 secrets:
- - 1e8d3317-4624-41c5-951e-62b536902cfa
+ - cde47d09-64da-4651-a62e-bf762c4dec73
 
 sources:
   - https://git.sr.ht/~ancarda/high-test-coverage
@@ -31,4 +31,4 @@ tasks:
   - test:        cd $DIR && composer run-script test
   - check-cov:   cd $DIR && composer run-script check-coverage
   - check-tests: cd $DIR && composer run-script check-tests
-  - packagist:   cd $DIR && .builds/poke-packagist ancarda high-test-coverage ~/.packagist
+  - packagist:   cd $DIR && .builds/poke-packagist ancarda coverage-enforcer ~/.packagist-api-token

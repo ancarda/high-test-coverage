@@ -4,6 +4,9 @@
     "type": "library",
     "license": "MIT",
     "config": {
+        "platform": {
+            "php": "7.3"
+        },
         "sort-packages": true
     },
     "autoload": {
@@ -21,7 +24,8 @@
     },
     "require-dev": {
         "ancarda/coverage-enforcer": "^1.0",
-        "infection/infection": "^0.21.4",
+        "composer/package-versions-deprecated": "1.11.99.1",
+        "infection/infection": "^0.18.2",
         "phpstan/phpstan": "^0.12.82",
         "phpstan/phpstan-phpunit": "^0.12.18",
         "phpstan/phpstan-strict-rules": "^0.12.9",
