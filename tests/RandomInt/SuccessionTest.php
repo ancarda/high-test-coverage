@@ -47,6 +47,7 @@ final class SuccessionTest extends TestCase
     public function testSuccessionRejectsEmptyArrays(): void
     {
         $this->expectException(LogicException::class);
+        $this->expectExceptionMessage('succession cannot be empty');
 
         new Succession([]);
     }
