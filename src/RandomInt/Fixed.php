@@ -7,8 +7,8 @@ namespace Ancarda\HighTestCoverage\RandomInt;
 /**
  * Return a predetermined fixed value every time
  *
- * This is the simplest possible implementation of RandomInt. The value given
- * in the constructor is returned from random_int every time.
+ * This is the simplest possible implementation of RandomInt.
+ * The value given in the constructor is returned from invoke every time.
  */
 final class Fixed implements RandomInt
 {

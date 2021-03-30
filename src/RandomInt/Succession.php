@@ -11,8 +11,9 @@ use LogicException;
  *
  * This implementation takes a list of integers in the constructor. Each time
  * a random integer is requested, the next number in the list is returned and
- * the pointer is moved one place. When the list is exhausted, the pointer
- * wraps around.
+ * the pointer is moved one place.
+ *
+ * When the list is exhausted, the pointer wraps around.
  */
 final class Succession implements RandomInt
 {
