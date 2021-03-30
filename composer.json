@@ -38,6 +38,13 @@
         "check-style": "phpcs",
         "check-tests": "infection",
         "fix-style": "phpcbf",
-        "test": "phpunit"
+        "test": "phpunit",
+        "check-everything": [
+            "@analyze",
+            "@check-style",
+            "@test",
+            "@check-coverage",
+            "@check-tests"
+        ]
     }
 }
