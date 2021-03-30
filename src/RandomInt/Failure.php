@@ -11,7 +11,7 @@ use RuntimeException;
  *
  * This class always throws an exception when you request a random number. It's
  * intended to be used to test how your code behaves when randomness is not
- * currently available.
+ * available.
  */
 final class Failure implements RandomInt
 {

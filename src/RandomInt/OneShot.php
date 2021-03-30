@@ -7,10 +7,11 @@ namespace Ancarda\HighTestCoverage\RandomInt;
 /**
  * Generates a single random number forever
  *
- * OneShot generates a single real random number when randomInt is called,
- * then returns that number -- and always that number -- forever. This is
- * intended to be used when you need uniformity across a test run, but want
- * randomness between test runs.
+ * OneShot generates a single real random number, then returns that -- and
+ * always that -- forever.
+ *
+ * This is intended to be used when you need uniformity across a test run, but
+ * can have or want randomness between test runs.
  */
 final class OneShot implements RandomInt
 {

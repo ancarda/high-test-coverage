@@ -30,7 +30,7 @@ final class Succession implements DateTimeImmutableFactory
 
     /**
      * @param array<int, DateTimeImmutable> $succession Non-Empty array
-     * @throws LogicException If given an empty array of integers
+     * @throws LogicException If given an empty array
      */
     public function __construct(array $succession)
     {

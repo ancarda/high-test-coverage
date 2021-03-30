@@ -10,7 +10,7 @@ use LogicException;
  * Return the next item in a set of predetermined fixed values every time
  *
  * This implementation takes a list of integers in the constructor. Each time
- * a random integer is requested, the next number in the list is returned and
+ * a random integer is requested, the next item in the list is returned and
  * the pointer is moved one place.
  *
  * When the list is exhausted, the pointer wraps around.
@@ -27,8 +27,8 @@ final class Succession implements RandomInt
     private $last = 0;
 
     /**
-     * @param array<int, int> $succession Non-Empty array of integers
-     * @throws LogicException If given an empty array of integers
+     * @param array<int, int> $succession Non-Empty array
+     * @throws LogicException If given an empty array
      */
     public function __construct(array $succession)
     {
