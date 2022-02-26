@@ -18,6 +18,7 @@ final class JsonBomb implements JsonSerializable
     /**
      * @return mixed
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         return fopen('php://memory', 'w');
