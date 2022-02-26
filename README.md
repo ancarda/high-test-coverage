@@ -2,6 +2,9 @@
 
 _Classes and Interfaces to help you get higher test coverage_
 
+[![License](https://img.shields.io/badge/license-MIT-teal)](https://choosealicense.com/licenses/mit/)
+[![Latest Stable Version](https://poser.pugx.org/ancarda/high-test-coverage/v/stable)](https://packagist.org/packages/ancarda/high-test-coverage)
+[![Total Downloads](https://poser.pugx.org/ancarda/high-test-coverage/downloads)](https://packagist.org/packages/ancarda/high-test-coverage)
 [![builds.sr.ht status](https://builds.sr.ht/~ancarda/high-test-coverage.svg)](https://builds.sr.ht/~ancarda/high-test-coverage)
 
 High Test Coverage is a collection of classes and interfaces designed to help
