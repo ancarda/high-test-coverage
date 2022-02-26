@@ -15,7 +15,7 @@ use JsonSerializable;
  */
 final class JsonBomb implements JsonSerializable
 {
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return fopen('php://memory', 'w');
     }

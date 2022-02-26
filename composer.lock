@@ -9,21 +9,36 @@
     "packages-dev": [
         {
             "name": "ancarda/coverage-enforcer",
-            "version": "1.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
-                "url": "https://git.sr.ht/~ancarda/coverage-enforcer",
-                "reference": "2664fd066d042ddc66573cc7ba665c0621ae1e97"
+                "url": "https://github.com/ancarda/coverage-enforcer.git",
+                "reference": "380feec425b57e732c52e7e10f1b779751a00983"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ancarda/coverage-enforcer/zipball/380feec425b57e732c52e7e10f1b779751a00983",
+                "reference": "380feec425b57e732c52e7e10f1b779751a00983",
+                "shasum": ""
             },
             "require": {
                 "ext-simplexml": "*",
                 "php": "^7.3|^8.0",
-                "symfony/console": "^5.2"
+                "symfony/console": "^5.1|^6.0"
+            },
+            "require-dev": {
+                "composer/package-versions-deprecated": "1.11.99.1",
+                "infection/infection": "^0.18.2",
+                "phpstan/phpstan": "^0.12.82",
+                "phpstan/phpstan-phpunit": "^0.12.18",
+                "phpstan/phpstan-strict-rules": "^0.12.9",
+                "phpunit/phpunit": "^9.5",
+                "squizlabs/php_codesniffer": "^3.5"
             },
             "bin": [
                 "bin/enforce-coverage"
             ],
-            "type": "library",
+            "type": "project",
             "autoload": {
                 "psr-4": {
                     "Ancarda\\CodeCoverage\\": "src"
@@ -34,7 +49,10 @@
                 "MIT"
             ],
             "description": "Enforces a minimum Code Coverage using a Coverage Clover XML file",
-            "time": "2021-03-25T15:47:39+00:00"
+            "support": {
+                "source": "https://github.com/ancarda/coverage-enforcer/tree/1.0.1"
+            },
+            "time": "2022-02-25T22:15:18+00:00"
         },
         {
             "name": "composer/package-versions-deprecated",
@@ -1097,16 +1115,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "0.12.82",
+            "version": "0.12.99",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "3920f0fb0aff39263d3a4cb0bca120a67a1a6a11"
+                "reference": "b4d40f1d759942f523be267a1bab6884f46ca3f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/3920f0fb0aff39263d3a4cb0bca120a67a1a6a11",
-                "reference": "3920f0fb0aff39263d3a4cb0bca120a67a1a6a11",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/b4d40f1d759942f523be267a1bab6884f46ca3f7",
+                "reference": "b4d40f1d759942f523be267a1bab6884f46ca3f7",
                 "shasum": ""
             },
             "require": {
@@ -1137,11 +1155,15 @@
             "description": "PHPStan - PHP Static Analysis Tool",
             "support": {
                 "issues": "https://github.com/phpstan/phpstan/issues",
-                "source": "https://github.com/phpstan/phpstan/tree/0.12.82"
+                "source": "https://github.com/phpstan/phpstan/tree/0.12.99"
             },
             "funding": [
                 {
                     "url": "https://github.com/ondrejmirtes",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/phpstan",
                     "type": "github"
                 },
                 {
@@ -1153,7 +1175,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-03-19T06:08:17+00:00"
+            "time": "2021-09-12T20:09:55+00:00"
         },
         {
             "name": "phpstan/phpstan-phpunit",
@@ -4168,5 +4190,5 @@
     "platform-overrides": {
         "php": "7.3"
     },
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.2.0"
 }
